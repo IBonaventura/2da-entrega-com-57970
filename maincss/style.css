@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #2b2c34;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la grilla y sus elementos */
+.grilla {
+  background-color: #2b2c34;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 1rem;
+  grid-template-areas:
+    "logo   logo    quien     servicios"
+    "logo   logo   productos   contacto";
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.logo {
+  background-color: #ef476f;
+  grid-area: logo;
+  border-radius: 50%;
+}
+
+.quien {
+  background-color: #f79a1f;
+  grid-area: quien;
+  border-radius: 1rem;
+}
+
+.servicios {
+  background-color: #d3869b;
+  grid-area: servicios;
+  border-radius: 1rem;
+}
+
+.productos {
+  background-color: #ffdc00;
+  grid-area: productos;
+  border-radius: 1rem;
+}
+
+.contacto {
+  background-color: #06d6a0;
+  grid-area: contacto;
+  border-radius: 1rem;
+}
+
+.grilla > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Estilos para botones */
+button {
+  background-color: #d3869b;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para botones del header */
+.navbar-brand {
+  color: #ff6b6b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+/* Estilos para imágenes redondeadas */
+img {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para botón de reserva */
+.btn-orange {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+}
